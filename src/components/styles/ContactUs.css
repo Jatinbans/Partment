@@ -1,0 +1,150 @@
+/* src/components/Home/ContactUs.css */
+.contact-section {
+    padding: 100px 0;
+    background-color: #f8fafc;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #64748b;
+    margin-bottom: 48px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #1e293b;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2563eb;
+}
+
+.success-message {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #dcfce7;
+    color: #166534;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact-title {
+        font-size: 36px;
+    }
+
+    .contact-subtitle {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .contact-form {
+        padding: 24px;
+    }
+}
+
+/* Input placeholder styles */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+/* Focus styles for better accessibility */
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    opacity: 0.7;
+}
+
+/* Error state styles */
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border-color: #ef4444;
+}
+
+/* Hover state for form elements */
+.form-group input:hover,
+.form-group textarea:hover {
+    border-color: #94a3b8;
+}
